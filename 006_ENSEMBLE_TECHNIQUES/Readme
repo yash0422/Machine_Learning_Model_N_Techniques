@@ -5,37 +5,7 @@
     
         Basic Ensemble Techniques
             2.1 Max Voting
-                The max voting method is generally used for classification problems. 
-                In this technique, multiple models are used to make predictions for each data point. 
-                The predictions by each model are considered as a ‘vote’. 
-                The predictions which we get from the majority of the models are used as the final prediction.
-                For example, when you asked 5 of your colleagues to rate your movie (out of 5);
-                we’ll assume three of them rated it as 4 while two of them gave it a 5.
-                Since the majority gave a rating of 4, the final rating will be taken as 4.
-                You can consider this as taking the mode of all the predictions.
-                The result of max voting would be something like this:
-                Colleague 1	Colleague 2	Colleague 3	Colleague 4	Colleague 5	Final rating
-                5	4	5	4	4	4
-                Sample Code:
-                Here x_train consists of independent variables in training data, y_train is the target variable for training data.
-                The validation set is x_test (independent variables) and y_test (target variable).
-                    model1 = tree.DecisionTreeClassifier()
-                    model2 = KNeighborsClassifier()
-                    model3= LogisticRegression()
-
-                    model1.fit(x_train,y_train)
-                    model2.fit(x_train,y_train)
-                    model3.fit(x_train,y_train)
-
-                    pred1=model1.predict(x_test)
-                    pred2=model2.predict(x_test)
-                    pred3=model3.predict(x_test)
-
-                    final_pred = np.array([])
-                    for i in range(0,len(x_test)):
-                        final_pred = np.append(final_pred, mode([pred1[i], pred2[i], pred3[i]]))
             2.2 Averaging
-                
             2.3 Weighted Average
     
         Advanced Ensemble Techniques
