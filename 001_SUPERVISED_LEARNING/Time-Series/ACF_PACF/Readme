@@ -1,0 +1,8 @@
+## ACF & PACF ##
+
+When we have a TIME-SEREIS data, we need to determine how many time-stamp in past are relevant to predict the future values.
+
+Now how is it done, we just can't take a random value for it.
+
+With the help of ACF & PACF we can determine how many past values are CORRELATED or RELEVANT to predict the future values.
+
