@@ -1,1 +1,5 @@
+DECOMPOSITION of TIME-SERIES
 
+Decompose Time-series data to check TREND, SEASONALITY and RESIDUALS.
+
+There are two ways of Decomposing Time-Series data; ADDITIVE and MULTIPLICATIVE.
