@@ -1,0 +1,36 @@
+Auto ARIMA Implementation in Python
+
+$exogenous:$ Outside Factors (e.g. other time series)
+
+$m:$ Seasonal Cycle Length (margin)
+
+$max order:$ maximum amount of variables to be used in the regression (p + q) (keep it to 10 or None)
+
+(Trend order are denoted by small_case p, d & q)
+
+$maxp:$ maximum AR components
+
+$maxq:$ maximum MA components
+
+$maxd:$ maximum Integrations
+
+(Seasonal order are denoted by Upper_case P, D & Q
+
+$maxP:$
+
+$maxQ:$
+
+$max_D:$
+
+$Maxiter:$ maximum interations we are giving the model to converge the coefficients (becomes harder as the order increses)
+
+$alpha:$ Level of significance, default is 5% which we should be using most of the time.
+
+$njobs:$ how many models to fit at a time (-1 indicates 'as many as possible")
+
+$trend:$ "ct" usually
+
+information criterion -> "aic", "aicc", "bic", "hqic", "oob" - for validation scoring -- respectively
+
+(Akaike Information Criterion, Corrected Akaike Information Criterion,
+Bayesian Information Criterion, Hannan-Quinn Information Criterion, or Out of Bag)
