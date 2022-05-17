@@ -1,0 +1,10 @@
+import pypyodbc as podbc
+
+conn2 = podbc.connect("Driver = {SQL Server Native Client 11.0};"
+"Server = INTDWSQLHACL01.intouchsol.com;"
+"Database = Analytics_Shire;"
+"Trusted_Connection = yes;")
+
+SQL_Query = pd.read_sql_query('''SLECT * FROM [dbo].[vw_SymphonyHealth_Plan]''', conn2)
+
+SQL_Query

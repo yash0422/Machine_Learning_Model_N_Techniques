@@ -1,0 +1,6 @@
+features = ["Col_01", "Col_02", "Col_03", "Col_04", "Col_05", "Col_06"]
+
+for f in features:
+	sns.countplot(x = f, data = df, palette = 'Set3') # hue = 'Good Loan"
+	plt.xticks(rotation = 45)
+	plt.show()
