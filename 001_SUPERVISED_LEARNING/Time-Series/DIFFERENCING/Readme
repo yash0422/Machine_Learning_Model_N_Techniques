@@ -1,0 +1,7 @@
+In this file we will see how DIFFERENCING is done:
+
+1. Manual Differencing.
+
+2. Function for Differencing.
+
+3. Automatic Differencing with help of .diff()
